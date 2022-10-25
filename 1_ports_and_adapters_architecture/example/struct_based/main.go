@@ -8,11 +8,9 @@ import (
 
 func main() {
 
-	pokemonDataAdapter := persistence.NewPokemonDataAdapter()
+	pokemonDataAdapter := data.NewPokemonDataAdapter()
 	pokemonService := service.NewPokemonService(pokemonDataAdapter)
 	restAdapter := rest.NewRestAdapter(pokemonService)
-	// TODO: API for getting single pok
 
 	restAdapter.Serve()
-
 }

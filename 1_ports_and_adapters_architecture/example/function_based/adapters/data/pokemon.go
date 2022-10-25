@@ -3,17 +3,10 @@ package data
 import (
 	"errors"
 
-	"github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/domain"
+	"github.com/fszuberski/blog/1_ports_and_adapters_architecture/function_based/core/domain"
 )
 
-type pokemonDataAdapter struct {
-}
-
-func NewPokemonDataAdapter() *pokemonDataAdapter {
-	return &pokemonDataAdapter{}
-}
-
-func (a pokemonDataAdapter) GetPokemon(id int) (*domain.Pokemon, error) {
+func GetPokemon(id int) (*domain.Pokemon, error) {
 	p, ok := data[id]
 	if !ok {
 		return nil, errors.New("data: invalid id")
@@ -22,7 +15,7 @@ func (a pokemonDataAdapter) GetPokemon(id int) (*domain.Pokemon, error) {
 	return &p, nil
 }
 
-func (a pokemonDataAdapter) ListPokemon() ([]*domain.Pokemon, error) {
+func ListPokemon() ([]*domain.Pokemon, error) {
 	res := make([]*domain.Pokemon, 0)
 	for _, v := range data {
 		v := v
