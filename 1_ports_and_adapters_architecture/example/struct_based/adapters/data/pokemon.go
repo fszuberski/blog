@@ -40,18 +40,18 @@ var data = map[int]domain.Pokemon{
 			"Grass",
 		},
 	},
-	2: {
-		ID:   2,
-		Name: "Squirtle",
-		Types: []string{
-			"Water",
-		},
-	},
-	3: {
-		ID:   3,
+	4: {
+		ID:   4,
 		Name: "Charmander",
 		Types: []string{
 			"Fire",
+		},
+	},
+	7: {
+		ID:   7,
+		Name: "Squirtle",
+		Types: []string{
+			"Water",
 		},
 	},
 }

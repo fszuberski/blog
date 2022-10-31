@@ -1,0 +1,10 @@
+mode: atomic
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:15.67,17.2 1 3
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:19.69,21.16 2 3
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:25.2,32.15 7 2
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:21.16,23.3 1 1
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:35.66,37.16 2 0
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:41.2,41.23 1 0
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:45.2,45.16 1 0
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:37.16,39.3 1 0
+github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/service/pokemon.go:41.23,43.3 1 0
