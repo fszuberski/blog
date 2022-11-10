@@ -1,6 +1,7 @@
 package rest
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/ports"
@@ -23,7 +24,7 @@ func (a restAdapter) Serve() {
 
 	err := http.ListenAndServe(":8080", mux)
 	if err != nil {
-		panic("")
+		panic(err.Error())
 	}
 }
 
@@ -31,5 +32,6 @@ func registerApi(mux *http.ServeMux, api []func() (string, func(w http.ResponseW
 	for _, function := range api {
 		route, handler := function()
 		mux.Handle(route, http.HandlerFunc(handler))
+		fmt.Printf("api-adapter: registered: %s\n", route)
 	}
 }
