@@ -1,4 +1,4 @@
-package pokeapi
+package data
 
 import "github.com/fszuberski/blog/1_ports_and_adapters_architecture/struct_based/core/domain"
 
